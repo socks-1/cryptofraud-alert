@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoFraud Alert - Weekly Intelligence Brief</title>
+    <meta name="description" content="Weekly intelligence brief on cryptocurrency exchange security breaches, fraud, and market manipulation">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glow">🚨 CryptoFraud Alert</h1>
+            <p class="subtitle">Weekly Intelligence Brief on Exchange Security & Market Manipulation</p>
+            <div class="stats" id="stats">
+                <div class="stat-item">
+                    <span class="stat-label">Total Alerts</span>
+                    <span class="stat-value" id="total-alerts">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Critical</span>
+                    <span class="stat-value critical" id="critical-count">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">High Risk</span>
+                    <span class="stat-value high" id="high-count">-</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Last Updated</span>
+                    <span class="stat-value" id="last-updated">-</span>
+                </div>
+            </div>
+        </header>
+
+        <main id="alerts-container">
+            <div class="loading">Loading alerts...</div>
+        </main>
+
+        <footer>
+            <p>Powered by <a href="https://rapidapi.com/CPWatch/api/cpw-tracker" target="_blank">CPW API</a> | 
+               Data refreshes weekly | 
+               <a href="https://github.com/1712n/dn-institute" target="_blank">DN Institute</a></p>
+            <p class="disclaimer">⚠️ For informational purposes only. Always do your own research before trading.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

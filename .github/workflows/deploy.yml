@@ -46,16 +46,16 @@ jobs:
             git push
           fi
 
-      # Optional: Deploy to GitHub Pages (uncomment if building a website)
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v5
-      # - name: Upload Pages
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: '.'
-      # - name: Deploy to Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v4
+      # Deploy to GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       # Optional: Post to Twitter (uncomment if building a social media bot)
       # Add TWITTER_BEARER_TOKEN to repository secrets

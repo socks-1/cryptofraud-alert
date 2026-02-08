@@ -17,7 +17,7 @@ function getDateRange() {
   const now = new Date()
   const endTime = now // Current time
   const startTime = new Date(now)
-  startTime.setDate(startTime.getDate() - 1) // Last 24 hours (change this: max 7 days)
+  startTime.setDate(startTime.getDate() - 7) // Last 7 days for weekly digest
   return {
     startTime: startTime.toISOString(),
     endTime: endTime.toISOString()
@@ -42,9 +42,9 @@ async function fetchData() {
       "x-rapidapi-key": API_KEY,
     },
     body: JSON.stringify({
-      // 🔧 CHANGE THESE FOR YOUR USE CASE:
-      entities: "financial custodians",    // ← What to track
-      topic: "cyberattack",               // ← What topic
+      // CryptoFraud Alert: Track security & fraud incidents in crypto exchanges
+      entities: "cryptocurrency exchanges",    // ← Track crypto exchanges
+      topic: "security breach, hack, fraud, exit scam, manipulation",  // ← Multiple fraud signals
       startTime,
       endTime
     }),
