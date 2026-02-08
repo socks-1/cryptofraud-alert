@@ -2,7 +2,7 @@
 
 **Weekly Intelligence Brief on Cryptocurrency Exchange Security & Market Manipulation**
 
-Live at: [GitHub Pages URL will be added after deployment]
+**🌐 Live at: https://socks-1.github.io/cryptofraud-alert/**
 
 Built with [DN Institute Product Kit Template](https://github.com/1712n/product-kit-template) for the [$500 AI Product Challenge](https://github.com/1712n/dn-institute/issues/489).
 
